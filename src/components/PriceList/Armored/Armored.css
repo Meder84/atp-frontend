@@ -1,0 +1,14 @@
+.armored {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.armored__wrapper {
+
+}
+
+.armored .li__item:nth-child(5) {
+  display: none;
+}

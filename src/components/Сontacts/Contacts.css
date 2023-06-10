@@ -1,0 +1,76 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+
+.contacts__wrapper {
+  align-items: start !important;
+}
+
+.container-link {
+
+}
+
+.conacts__description {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.conacts__description__title {
+  font-size: 2em;
+}
+
+.conacts__description__subtitle {
+  text-align: start;
+  margin: 50px 0 20px;
+}
+
+.conacts__description__text {
+  text-align: start;
+}
+
+.conacts__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  width: fit-content;
+  padding: 0;
+}
+
+.conacts__list__item {
+  list-style: none;
+}
+
+.contacts__list__title {
+  font-size: 1em;
+  padding: 5px 15px;
+}
+
+.contacts__list__text {
+}
+
+.conacts__corruption__container {
+
+}
+
+.contacts__corruption__text {
+  text-align: start;
+}
+
+
+@media screen and (max-width: 550px) {
+  .conacts__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .conacts__list {
+    grid-template-columns: 1fr;
+  }
+}

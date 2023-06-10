@@ -1,0 +1,30 @@
+.ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  /* grid-column-gap: 10px; */
+  grid-row-gap: 10px;
+  position: relative;
+  margin: 10px 0 0;
+  padding: 0;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ul li{
+  display: flex;
+  align-items: end;
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 10px 10px 0;
+}
+
+.ul li:first-child{
+  font-weight: 900;
+  text-align: start;
+  padding-left: 0;
+}
+
+.ul:first-child{
+  font-weight: 900;
+}

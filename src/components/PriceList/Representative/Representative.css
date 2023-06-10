@@ -1,0 +1,14 @@
+.representative {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.representative .li__item:nth-child(n+4):nth-child(-n+5) {
+  display: none;
+}
+
+.representative .li__list {
+  grid-template-columns: repeat(3, 1fr);
+}

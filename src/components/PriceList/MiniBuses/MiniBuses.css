@@ -1,0 +1,14 @@
+.mini-buses {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.mini-buses__wrapper {
+
+}
+
+.mini-buses .li__item:nth-child(5) {
+  display: none;
+}

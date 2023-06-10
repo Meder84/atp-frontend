@@ -1,0 +1,21 @@
+.carusel {
+  transition: 0.5s linear;
+  /* background: linear-gradient(to right, #0B1822, #585C5F); */
+  background: radial-gradient(black 20%, transparent);
+}
+
+.carusel__wrapper {
+
+}
+
+.carusel__title {
+  color: #fff;
+}
+
+.carusel__bootstrap-container {
+  transition: 1s linear;
+}
+
+.carousel-indicators{
+  margin-bottom: -25px;
+}

@@ -1,0 +1,8 @@
+.subtitle {
+  transition: 0.3s;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 30px;
+}

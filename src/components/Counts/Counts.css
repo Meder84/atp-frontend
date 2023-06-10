@@ -1,0 +1,52 @@
+.counts {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.counts .wrapper {
+  padding-top: 0 !important;
+}
+
+.counts__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  margin: 0;
+  padding: 0 15px 40px;
+}
+
+.counts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counts__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.countUp {
+  font-size: 36px;
+  line-height: 2;
+  display: block;
+  font-weight: 500;
+  color: #124364;
+}
+
+.counts__text {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .counts{
+    display: none;
+  }
+}

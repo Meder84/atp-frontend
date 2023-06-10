@@ -1,0 +1,26 @@
+.general-title {
+  margin-bottom: 20px;
+}
+
+.general-title::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #20a098;;
+  bottom: 1px;
+  left: calc(50% - 60px);
+  margin-bottom: -15px;
+}
+
+.general-title::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: red;
+  left: calc(50% - 20px);
+  bottom: -15px;
+}

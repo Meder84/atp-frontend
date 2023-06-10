@@ -1,0 +1,18 @@
+.icon-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
+}
+
+.icon-hamburger__item{
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+ 
+
+

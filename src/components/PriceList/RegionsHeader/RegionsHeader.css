@@ -1,0 +1,12 @@
+.regionsHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.regionsHeader .subtitle {
+  margin-bottom: 20px;
+}

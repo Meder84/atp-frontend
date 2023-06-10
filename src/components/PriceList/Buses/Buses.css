@@ -1,0 +1,18 @@
+.buses {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.buses__wrapper {
+
+}
+
+.buses .li__list {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* .mini-buses .li__item:nth-child(5) {
+  display: none;
+} */

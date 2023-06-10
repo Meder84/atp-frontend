@@ -1,0 +1,7 @@
+.container-link {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: start;
+  margin: -20px 0 60px;
+}

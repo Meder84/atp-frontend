@@ -1,0 +1,14 @@
+.tracks {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.tracks .li__item:nth-child(n+4):nth-child(-n+5) {
+  display: none;
+}
+
+.tracks .li__list {
+  grid-template-columns: repeat(3, 1fr);
+}
