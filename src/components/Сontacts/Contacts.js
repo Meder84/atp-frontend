@@ -22,6 +22,15 @@ function Contacts() {
         </div>
         <ul className="conacts__list">
           <li className="conacts__list__item">
+            <h3 className="contacts__list__title">ДИРЕКТОР:</h3>
+            <h3 className="contacts__list__title">АПСАМАТОВ ЖЕНИШ ГАПАРОВИЧ</h3>
+            <p className="contacts__list__text">+996 312-43-48-48</p>
+          </li>
+          <li className="conacts__list__item">
+            <h3 className="contacts__list__title">ПРИЕМНАЯ:</h3>
+            <p className="contacts__list__text">+996 312-43-48-48</p>
+          </li>
+          <li className="conacts__list__item">
             <h3 className="contacts__list__title">ДИСПЕТЧЕР АТП:</h3>
             <p className="contacts__list__text">+996 555-92-32-18</p>
           </li>

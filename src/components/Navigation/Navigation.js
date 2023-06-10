@@ -58,6 +58,9 @@ function Navigation({ customNavigation, customNavigationLinks, customNavLink }) 
             <Link to="/about" className="navigation__link__about-popup__link">
               О нас
             </Link>
+            <Link to="/vacancies" className="navigation__link__about-popup__link">
+              Вакансии
+            </Link>
           </div>
         </li>
         <li className="navigation__link">
@@ -83,9 +86,9 @@ function Navigation({ customNavigation, customNavigationLinks, customNavLink }) 
         </li>
         <li className="navigation__link">
           <CustomLink
-            to="/vacancies"
+            to="/news"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Вакансии "
+            text="Новости"
           />
         </li>
       </ul>

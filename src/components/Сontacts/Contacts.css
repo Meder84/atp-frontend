@@ -38,17 +38,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
-  width: fit-content;
+  width: 100%;
   padding: 0;
 }
 
 .conacts__list__item {
   list-style: none;
+  text-align: start;
 }
 
 .contacts__list__title {
   font-size: 1em;
-  padding: 5px 15px;
 }
 
 .contacts__list__text {
