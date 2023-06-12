@@ -21,11 +21,15 @@ import ItemGallery from '../ItemGallery/ItemGallery';
 import LinkToMain from '../LinkToMain/LinkToMain';
 import './Gallery.css';
 
-function Gallery() {
+function Gallery({ onCardClick, card }) {
   const cars = 'легковой автомобиль'
   const bus = 'Автобус'
   const miniBuse = 'Микроавтобусы'
   const parket = 'Внедорожник'
+
+  function handleClick() {
+    onCardClick(card);
+  } 
 
   return(
     <section className="gallery">
