@@ -17,8 +17,10 @@ import Login from "../Login/Login";
 import Vacancies from "../Vacancies/Vacancies";
 import FooterCopyright from "../FooterCopyright/FooterCoptright";
 import Contacts from "../Сontacts/Contacts";
-import "./Main.css";
 import News from "../News/News";
+import Management from "../Management/Management";
+import Structure from "../Structure/Structure";
+import "./Main.css";
 
 function Main() {
   return (
@@ -99,6 +101,18 @@ function Main() {
       <Route path='/news'>
         <Header headerCustom="app__header" />
         <News />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/management'>
+        <Header headerCustom="app__header" />
+        <Management />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/structure'>
+        <Header headerCustom="app__header" />
+        <Structure />
         <Footer />
         <FooterCopyright />
       </Route>

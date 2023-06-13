@@ -52,6 +52,12 @@ function Navigation({ customNavigation, customNavigationLinks, customNavLink }) 
             text="О нас"
           />
           <div className="navigation__link__about-popup">
+            <Link to="/management" className="navigation__link__about-popup__link">
+              Руководство
+            </Link>
+            <Link to="/structure" className="navigation__link__about-popup__link">
+              Структура
+            </Link>
             <Link to="/contacts" className="navigation__link__about-popup__link">
               Контакты
             </Link>
