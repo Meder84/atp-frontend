@@ -1,7 +1,7 @@
 import React from "react";
-import jenish from '../../images/managment/jenish.jpg';
-import erlan from '../../images/managment/Erlan.jpeg';
 import flag from '../../images/managment/flag.jpg';
+import azaat from '../../images/structure/azaat.jpeg';
+import aitu from '../../images/structure/aitu.jpeg';
 import './Structure.css';
 
 function Structure() {
@@ -21,9 +21,9 @@ function Structure() {
 						</div>
 					</li>
 					<li className="structure__item">
-						<img className="structure__image" src={flag} alt="руководителя" />
+						<img className="structure__image" src={azaat} alt="руководителя" />
 						<div className="structure__description">
-							<h3 className="structure__description__title">Ибраимов Азат Таалайбекович</h3>
+							<h3 className="structure__description__title">Ибраимов Азаат Таалайбекович</h3>
 							<p className="structure__description__text">Начальник службы (по управлению человеческими ресурсами и делопроизводства) Государственного учреждения
 								"Автотранспортное предприятие" при Управлении делами Президента Кыргызской Республики</p>
 							<p className="structure__description__text">+996 312 680 911</p>
@@ -39,7 +39,7 @@ function Structure() {
 						</div>
 					</li>
 					<li className="structure__item">
-						<img className="structure__image" src={flag} alt="руководителя" />
+						<img className="structure__image" src={aitu} alt="руководителя" />
 						<div className="structure__description">
 							<h3 className="structure__description__title">Музакеев Айту Мукамбетович</h3>
 							<p className="structure__description__text">Начальник службы (по безопасности) Государственного учреждения
