@@ -108,6 +108,12 @@
   .navigation__links {
     margin: 0;
   }
+  
+  .navigation__link__about-popup {
+    top: 0;
+    left: 100px;
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -134,11 +140,5 @@
   .navigation__header-conteiner {
     justify-content: flex-end;
     margin: 0;
-  }
-  
-  .navigation__link__about-popup {
-    top: 0;
-    left: 100px;
-    z-index: 1;
   }
 }
