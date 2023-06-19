@@ -1,15 +1,16 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import testimonials1 from "../../images/testimonials-1.png";  //Андрей Богатов
 import testimonials2 from "../../images/testimonials-2.png";  //Павел Матяш
 import testimonials3 from "../../images/testimonials-3.png";  // Юлия Иванова 
 import testimonials4 from "../../images/testimonials-4.jpg";  // Анжела
 import testimonials5 from "../../images/testimonials-5.jpg";  // Михаил
 import testimonials6 from "../../images/testimonials-6.jpg";  // Диана
-
 // import CarouselItem from "../CarouselItem/CarouselItem";
-import "./Carousel.css";
 import CarouselSlideElem from "../CarouselSlideElem/CarouselSlideElem";
+import "./Carousel.css";
 
 const textComment11 = "“Решили арендовать автомобиль, чтобы встретить важных гостей. Без никаких проблем получилось это сделать. Все на высшем уровне. Спасибо!”"
 const textComment22 = "“Столкнулся с проблемой поломки машины. Механики и мастера данной компании действительно профессионалы своего дела. Сделали очень быстро, а главное - качественно.”"
