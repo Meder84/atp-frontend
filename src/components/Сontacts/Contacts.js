@@ -50,7 +50,12 @@ function Contacts() {
             совершенствование работы по противодействию коррупции, Вы можете
             сообщить об этом.
           </p>
-          <p className="contacts__corruption__text text">директору "Автомобильного предриятия" При Управлении делами президента Кыргызской Республики {<br />} +996 312-43-48-48</p>
+          <p className="contacts__corruption__text text">директору "Автомобильного предриятия"
+            При Управлении делами президента Кыргызской Республики </p>
+          <p className="contacts__corruption__text contacts__corruption__text_size text">
+            +996 312-43-48-48 
+            <span className="contacts__corruption__text__span">Email: atp.udpkr@mail.gov.kg</span>
+          </p>
         </div>
       </div>
     </section>

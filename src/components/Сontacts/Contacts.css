@@ -61,6 +61,14 @@
 .contacts__corruption__text {
   text-align: start;
 }
+.contacts__corruption__text__span {
+  margin-left: 20px;
+}
+
+.contacts__corruption__text_size {
+  font-size: 0.9em !important;
+  opacity: 0.8;
+}
 
 
 @media screen and (max-width: 550px) {
