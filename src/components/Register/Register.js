@@ -13,22 +13,22 @@ function Register(props) {
     useFormWithValidation();
   const [message, setmessage] = useState("");
 
-  // useEffect(() => {
-  //   props.resetMessage();
-  // }, [values]);
+  useEffect(() => {
+    props.resetMessage();
+  }, [values]);
 
-  // useEffect(() => {
-  //   setmessage(props.message);
-  // }, [props.message]);
+  useEffect(() => {
+    setmessage(props.message);
+  }, [props.message]);
 
-  // function formReset () {
-  //   resetForm({ name: '', email: '', password: '' });
-  // }
+  function formReset () {
+    resetForm({ name: '', email: '', password: '' });
+  }
 
-  // const handleSubmit = (evt) => {
-  //   evt.preventDefault();
-  //   props.handleRegister(values.name, values.email, values.password,  formReset);
-  // };
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    props.handleRegister(values.name, values.email, values.password,  formReset);
+  };
 
   return (
     <div className="register">
@@ -39,7 +39,7 @@ function Register(props) {
           name="register"
           title="Добро пожаловать!"
           customFormTitle="register__form-title"
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <fieldset className="register__fieldset-main">
             <Input
@@ -54,7 +54,7 @@ function Register(props) {
               errorId="name-error"
               isError={errors.name}
               errorText={errors.name}
-              // onChange={handleChange}
+              onChange={handleChange}
               value={values.name || ""}
             >
               Имя
@@ -72,7 +72,7 @@ function Register(props) {
               errorId="email-error"
               isError={errors.email}
               errorText={errors.email}
-              // onChange={handleChange}
+              onChange={handleChange}
               value={values.email || ""}
             >
               E-mail
@@ -89,7 +89,7 @@ function Register(props) {
               errorId="password-error"
               isError={errors.password || message}
               errorText={errors.password || message}
-              // onChange={handleChange}
+              onChange={handleChange}
               value={values.password || ""}
             >
               Пароль

@@ -1,7 +1,8 @@
+import { useState, useEffect } from "react";
 import Header from "../Header/Header";
 import Gallery from "../Gallery/Gallery";
 import Footer from "../Footer/Footer";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import { Route, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import About from "../About/About";
 import Counts from "../Counts/Counts";
 import PriceList from "../PriceList/PriceList/PriceList";
@@ -20,11 +21,137 @@ import Contacts from "../Сontacts/Contacts";
 import News from "../News/News";
 import Management from "../Management/Management";
 import Structure from "../Structure/Structure";
+import * as auth from '../../utils/auth';
+import { BAD_REQUEST, DEFAULT_ERROR } from '../../utils/consts';
+// import cross from '../../images/cross.svg';
+// import tick from '../../images/tick.svg';
 import "./Main.css";
 
+export const initState = {
+  password: '',
+  email: '',
+  message: '',
+  imgTooltip: '',
+  loggedIn: false,
+}
+
 function Main() {
+  const history = useHistory();
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [currentUser, setCurrentUser] = useState({ name: '', email: ''});
+  const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    tokenCheck()
+  }, [loggedIn]);
+
+  function handleRegister(name, email, password, formReset) {
+    let messageText = '';
+
+    auth.register(name, email, password)
+    .then(() => {
+      formReset();
+      auth.authorize(email, password)
+        .then((data) => {
+          if (!data) return;
+
+          localStorage.setItem('jwt', data.token);
+          formReset();
+          history.push('/movies');
+          setLoggedIn(true)
+        })
+        .catch(() => {
+          setMessage(BAD_REQUEST);
+        })
+    })
+    .catch((err) => {
+      switch (err) {
+        case 400:
+          messageText = BAD_REQUEST;
+          break;
+        case 409:
+          messageText = `Пользователь ${email} уже существует`;
+          break;
+        default:
+          messageText = DEFAULT_ERROR;
+      }
+    })
+    .finally(() => setMessage(messageText))
+  }
+
+  function handleLogin (email, password, formReset) {
+    let messageText = '';
+
+    auth.authorize(email, password)
+      .then((data) => {
+        if (!data) return;
+
+        localStorage.setItem('jwt', data.token);
+        formReset();
+        history.push('/movies');
+        setLoggedIn(true)
+      })
+      .catch((err) => {
+        switch (err) {
+          case 400:
+            messageText = BAD_REQUEST;
+            break;
+          case 401:
+            messageText = `Пользователь ${email} не авторизован!`;
+            break;
+          default:
+            messageText = DEFAULT_ERROR;
+        }
+      })
+      .finally(() => setMessage(messageText))
+  }
+
+  function tokenCheck () {
+    if (!localStorage.getItem('jwt')) return;
+
+    const jwt = localStorage.getItem('jwt');
+
+    auth.getContent(jwt).then((res) => {
+      if (!res) return;
+
+      setCurrentUser({
+        name: res.data.name,
+        email: res.data.email,
+      });
+      setLoggedIn(true);
+      history.push('/movies');
+    })
+    .catch(err => {
+      console.log(err);
+      setLoggedIn(false);
+      localStorage.removeItem('jwt');
+    });
+  }
+
+  function handleLogout () {
+    localStorage.removeItem('foundMovies');
+    localStorage.removeItem('jwt');
+    setLoggedIn(false);
+    setCurrentUser({ name: '', email: '' });
+    history.push('/');
+  }
+
+  function resetMessage () {
+    setMessage('');
+  }
+
   return (
     <section className="main">
+      <Route path="/signup">
+        <Register
+          handleRegister={handleRegister}
+          // message={message}
+          resetMessage={resetMessage}
+        />
+      </Route>
+      <Route path='/signin'>
+        <Login />
+      </Route>
       <Route path="/price-list">
         <Header headerCustom="app__header" />
         <PriceList />
@@ -115,16 +242,6 @@ function Main() {
         <Structure />
         <Footer />
         <FooterCopyright />
-      </Route>
-      <Route path="/signup">
-        <Register
-          // handleRegister={handleRegister}
-          // message={message}
-          // resetMessage={resetMessage}
-        />
-      </Route>
-      <Route path='/signin'>
-        <Login />
       </Route>
     </section>
   );
