@@ -16,7 +16,7 @@ function Footer() {
           <Navigation />
           <div className="footer__header-contacts">
             <h4>+996 (312) 43-48-48</h4>
-            <a href="http://atp.gov.kg/" target="_blank">
+            <a className="footer__header__link" href="http://atp.gov.kg/" target="_blank">
               atp.gov.kg
             </a>
           </div>

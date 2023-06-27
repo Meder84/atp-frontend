@@ -27,14 +27,6 @@ import { BAD_REQUEST, DEFAULT_ERROR } from '../../utils/consts';
 // import tick from '../../images/tick.svg';
 import "./Main.css";
 
-export const initState = {
-  password: '',
-  email: '',
-  message: '',
-  imgTooltip: '',
-  loggedIn: false,
-}
-
 function Main() {
   const history = useHistory();
   const [loggedIn, setLoggedIn] = useState(false);
@@ -57,7 +49,7 @@ function Main() {
 
           localStorage.setItem('jwt', data.token);
           formReset();
-          history.push('/movies');
+          history.push('/');
           setLoggedIn(true)
         })
         .catch(() => {
@@ -88,7 +80,7 @@ function Main() {
 
         localStorage.setItem('jwt', data.token);
         formReset();
-        history.push('/movies');
+        history.push('/');
         setLoggedIn(true)
       })
       .catch((err) => {
@@ -119,7 +111,7 @@ function Main() {
         email: res.data.email,
       });
       setLoggedIn(true);
-      history.push('/movies');
+      history.push('/');
     })
     .catch(err => {
       console.log(err);
@@ -145,7 +137,7 @@ function Main() {
       <Route path="/signup">
         <Register
           handleRegister={handleRegister}
-          // message={message}
+          message={message}
           resetMessage={resetMessage}
         />
       </Route>

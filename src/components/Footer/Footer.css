@@ -37,12 +37,16 @@
 }
 
 .footer__header-contacts h4, a {
-  text-decoration: none;
-  color: #adabab;
+  text-decoration: none !important;
+  color: #adabab !important;
   font-size: 1.2em;
   font-weight: 500;
   line-height: 1.2;
   margin: 0;
+} 
+
+.footer__header-contacts a:hover {
+  color: #20a098 !important;
 } 
 
 .footer__content {
