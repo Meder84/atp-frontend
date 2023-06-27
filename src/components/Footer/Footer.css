@@ -26,6 +26,10 @@
   color: #adabab;
 }
 
+.footer .navigation__content:hover {
+  color: #20a098;
+}
+
 .footer__header-contacts {
   display: flex;
   flex-direction: column;
@@ -43,6 +47,15 @@
   font-weight: 500;
   line-height: 1.2;
   margin: 0;
+} 
+
+.footer__header__link {
+  text-decoration: none;
+  color: #adabab !important;
+}
+
+.footer__header__link:hover {
+  color: #20a098 !important;
 } 
 
 .footer__content {
