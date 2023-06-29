@@ -13,22 +13,22 @@ function Login(props) {
     useFormWithValidation();
   const [message, setmessage] = useState("");
 
-  // useEffect(() => {
-  //   props.resetMessage();
-  // }, [values]);
+  useEffect(() => {
+    props.resetMessage();
+  }, [values]);
 
-  // useEffect(() => {
-  //   setmessage(props.message);
-  // }, [props.message]);
+  useEffect(() => {
+    setmessage(props.message);
+  }, [props.message]);
 
-  // function formReset() {
-  //   resetForm({ email: "", password: "" });
-  // }
+  function formReset() {
+    resetForm({ email: "", password: "" });
+  }
 
-  // const handleSubmit = (evt) => {
-  //   evt.preventDefault();
-  //   props.handleLogin(values.email, values.password, formReset);
-  // };
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    props.handleLogin(values.email, values.password, formReset);
+  };
 
   return (
     <div className="login">
@@ -38,7 +38,7 @@ function Login(props) {
           customForm="login__form"
           name="login"
           title="Рады видеть!"
-          // onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
         >
           <fieldset className="login__fieldset-main">
             <Input
