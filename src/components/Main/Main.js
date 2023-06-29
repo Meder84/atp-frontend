@@ -30,7 +30,7 @@ import "./Main.css";
 function Main() {
   const history = useHistory();
   const [loggedIn, setLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState({ name: '', email: ''});
+  const [currentUser, setCurrentUser] = useState({ name: '', email: '' });
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -41,37 +41,37 @@ function Main() {
     let messageText = '';
 
     auth.register(name, email, password)
-    .then(() => {
-      formReset();
-      auth.authorize(email, password)
-        .then((data) => {
-          if (!data) return;
+      .then(() => {
+        formReset();
+        auth.authorize(email, password)
+          .then((data) => {
+            if (!data) return;
 
-          localStorage.setItem('jwt', data.token);
-          formReset();
-          history.push('/');
-          setLoggedIn(true)
-        })
-        .catch(() => {
-          setMessage(BAD_REQUEST);
-        })
-    })
-    .catch((err) => {
-      switch (err) {
-        case 400:
-          messageText = BAD_REQUEST;
-          break;
-        case 409:
-          messageText = `Пользователь ${email} уже существует`;
-          break;
-        default:
-          messageText = DEFAULT_ERROR;
-      }
-    })
-    .finally(() => setMessage(messageText))
+            localStorage.setItem('jwt', data.token);
+            formReset();
+            history.push('/');
+            setLoggedIn(true)
+          })
+          .catch(() => {
+            setMessage(BAD_REQUEST);
+          })
+      })
+      .catch((err) => {
+        switch (err) {
+          case 400:
+            messageText = BAD_REQUEST;
+            break;
+          case 409:
+            messageText = `Пользователь ${email} уже существует`;
+            break;
+          default:
+            messageText = DEFAULT_ERROR;
+        }
+      })
+      .finally(() => setMessage(messageText))
   }
 
-  function handleLogin (email, password, formReset) {
+  function handleLogin(email, password, formReset) {
     let messageText = '';
 
     auth.authorize(email, password)
@@ -98,7 +98,7 @@ function Main() {
       .finally(() => setMessage(messageText))
   }
 
-  function tokenCheck () {
+  function tokenCheck() {
     if (!localStorage.getItem('jwt')) return;
 
     const jwt = localStorage.getItem('jwt');
@@ -113,14 +113,14 @@ function Main() {
       setLoggedIn(true);
       history.push('/');
     })
-    .catch(err => {
-      console.log(err);
-      setLoggedIn(false);
-      localStorage.removeItem('jwt');
-    });
+      .catch(err => {
+        console.log(err);
+        setLoggedIn(false);
+        localStorage.removeItem('jwt');
+      });
   }
 
-  function handleLogout () {
+  function handleLogout() {
     localStorage.removeItem('foundMovies');
     localStorage.removeItem('jwt');
     setLoggedIn(false);
@@ -128,7 +128,7 @@ function Main() {
     history.push('/');
   }
 
-  function resetMessage () {
+  function resetMessage() {
     setMessage('');
   }
 
@@ -142,7 +142,12 @@ function Main() {
         />
       </Route>
       <Route path='/signin'>
-        <Login />
+        <Login
+          handleLogin={handleLogin}
+          message={message}
+          resetMessage={resetMessage}
+          history={history} 
+        />
       </Route>
       <Route path="/price-list">
         <Header headerCustom="app__header" />
