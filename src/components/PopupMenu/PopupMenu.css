@@ -33,7 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: start;
+  align-items: flex-start;
   box-sizing: border-box;
   transition: 0.4s ease-in-out;
   width: 100%;
@@ -59,7 +59,7 @@
 .popup-menu__links {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
   transition: 0.4s ease-in-out;
@@ -75,8 +75,8 @@
 
 .popup-menu__navigation-links {
   flex-direction: column !important;
-  justify-content: start !important;
-  align-items: start;
+  justify-content: flex-start !important;
+  align-items: flex-start;
 }
 
 .popup-menu__navigation-link {

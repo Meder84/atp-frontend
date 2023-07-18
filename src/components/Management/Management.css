@@ -27,7 +27,7 @@
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	text-align: start;
+	text-align: flex-start;
 }
 
 .management__image {
@@ -39,8 +39,8 @@
 .management__description {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
-	align-items: start;
+	justify-content: flex-start;
+	align-items: flex-start;
 	padding: 0 40px;
 }
 

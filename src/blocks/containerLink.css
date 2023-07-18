@@ -2,6 +2,6 @@
   display: flex;
   position: relative;
   width: 100%;
-  justify-content: start;
+  justify-content: flex-start;
   margin: -20px 0 60px;
 }

@@ -1,7 +1,7 @@
 .vacancies {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   transition: 0.4s ease-in-out;
@@ -10,7 +10,7 @@
 .vacancies__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
   transition: 0.4s ease-in-out;
@@ -20,7 +20,7 @@
 .vacancies__wrapper-contacts {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   position: absolute;
   color: rgba(0, 0, 0, 0.5);
   right: 40px;
@@ -40,10 +40,10 @@
 .vacancies__description {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 20px 0;
-  text-align: start;
+  text-align: flex-start;
 }
 
 .vacancies__description-text {
@@ -71,7 +71,7 @@
   display: flex;
   justify-content: space-between;
   list-style: disc;
-  text-align: start;
+  text-align: flex-start;
   transition: 0.4s ease-in-out;
 }
 
