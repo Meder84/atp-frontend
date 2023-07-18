@@ -13,7 +13,7 @@
 
 .ul li{
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   padding: 10px 10px 0;
@@ -21,7 +21,7 @@
 
 .ul li:first-child{
   font-weight: 900;
-  text-align: start;
+  text-align: flex-start;
   padding-left: 0;
 }
 
