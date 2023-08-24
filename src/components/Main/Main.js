@@ -26,6 +26,8 @@ import { BAD_REQUEST, DEFAULT_ERROR } from '../../utils/consts';
 // import cross from '../../images/cross.svg';
 // import tick from '../../images/tick.svg';
 import "./Main.css";
+import Events from "../Events/Events";
+import CompletedWork from "../СompletedWork/СompletedWork";
 
 function Main() {
   const history = useHistory();
@@ -237,6 +239,18 @@ function Main() {
       <Route path='/structure'>
         <Header headerCustom="app__header" />
         <Structure />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/events'>
+        <Header headerCustom="app__header" />
+        <Events />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/completedWork'>
+        <Header headerCustom="app__header" />
+        <CompletedWork />
         <Footer />
         <FooterCopyright />
       </Route>

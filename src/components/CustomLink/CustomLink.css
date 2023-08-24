@@ -1,3 +1,8 @@
+.customLink {
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
 .customLink:hover {
   color: #20a098;
   cursor: pointer;

@@ -3,7 +3,7 @@ import "./CustomLink.css";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 // import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-function CustomLink({ to, customNavigationLink, text }) {
+function CustomLink({ to, customNavigationLink, children }) {
   return (
     <NavLink
       to={to}
@@ -13,7 +13,7 @@ function CustomLink({ to, customNavigationLink, text }) {
       ${customNavigationLink}
     `}
     >
-      {text}
+      {children}
     </NavLink>
   );
 }
