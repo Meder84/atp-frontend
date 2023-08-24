@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atp-frontend/static/css/main.c24c8cb5.css",
-    "main.js": "/atp-frontend/static/js/main.9f196d8e.js",
+    "main.js": "/atp-frontend/static/js/main.4195cfb7.js",
     "static/media/hard1.png": "/atp-frontend/static/media/hard1.132343ed8f4a95a29f7c.png",
     "static/media/testimonials-5.jpg": "/atp-frontend/static/media/testimonials-5.0858a770d00d42b5f742.jpg",
     "static/media/testimonials-4.jpg": "/atp-frontend/static/media/testimonials-4.beed1d501bb1057af46b.jpg",
@@ -80,10 +80,10 @@
     "static/media/iconFacebook.svg": "/atp-frontend/static/media/iconFacebook.5e1cb4b86ac3f872dadc.svg",
     "static/media/iconHamburger.svg": "/atp-frontend/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
     "main.c24c8cb5.css.map": "/atp-frontend/static/css/main.c24c8cb5.css.map",
-    "main.9f196d8e.js.map": "/atp-frontend/static/js/main.9f196d8e.js.map"
+    "main.4195cfb7.js.map": "/atp-frontend/static/js/main.4195cfb7.js.map"
   },
   "entrypoints": [
     "static/css/main.c24c8cb5.css",
-    "static/js/main.9f196d8e.js"
+    "static/js/main.4195cfb7.js"
   ]
 }
