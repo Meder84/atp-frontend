@@ -42,15 +42,17 @@ function Navigation({ customNavigation, customNavigationLinks, customNavLink }) 
           <CustomLink
             to="/"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Главная"
-          />
+          >
+            <p className="text">Главная</p>
+          </CustomLink>
         </li>
         <li className="navigation__link navigation__link__about-popup__hide">
           <CustomLink
             to="/about"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="О нас"
-          />
+          >
+            <p className="text">О нас</p>
+          </CustomLink>
           <div className="navigation__link__about-popup">
             <Link to="/management" className="navigation__link__about-popup__link">
               Руководство
@@ -73,29 +75,33 @@ function Navigation({ customNavigation, customNavigationLinks, customNavLink }) 
           <CustomLink
             to="/price-list"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Аренда"
-          />
+          >
+            <p className="text">Аренда</p>
+          </CustomLink>
         </li>
         <li className="navigation__link">
           <CustomLink
             to="/repair"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Ремонт"
-          />
+          >
+            <p className="text">Ремонт</p>
+          </CustomLink>
         </li>
         <li className="navigation__link">
           <CustomLink
             to="/gallery"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Галерея"
-          />
+          >
+            <p className="text">Галерея</p>
+          </CustomLink>
         </li>
         <li className="navigation__link">
           <CustomLink
-            to="/news"
+            to="/events"
             customNavigationLink={`navigation__content ${customNavLink}`}
-            text="Новости"
-          />
+          >
+            <p className="text">События</p>
+          </CustomLink>
         </li>
       </ul>
       {/* <NavLink to='/profile'

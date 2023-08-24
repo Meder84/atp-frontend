@@ -23,7 +23,7 @@ function News() {
     <section className="news">
       <main className="news__wrapper wrapper">
         <div className="container-link">
-          <LinkToMain text="Новости" />
+          <LinkToMain text="События" />
         </div>
         <div className="news__description">
           <h2 className="news__title title general-title">Государственное учреждение
