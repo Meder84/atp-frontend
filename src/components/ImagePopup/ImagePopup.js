@@ -1,23 +1,28 @@
 import React from "react";
+import './ImagePopup.css';
 
-function ImagePopup(props) {
+
+function ImagePopup({ card, close, handleOverlay }) {
   return (
-    <div className={`popup popup_type_place ${props.card.link ? 'popup_opened' : ''}`}>
+    <div 
+      className={`popup popup_type_place ${card.url ? 'popup_opened' : ''}`}
+      onClick={handleOverlay}
+    >
       <figure className="popup__container-place">
         <button 
           className="popup__close-button popup__close-button_place opacity" 
           type="button"
-          onClick={props.close}
+          onClick={close}
         >
         </button>
         <img 
           className="popup__image"  
-          src={props.card ? props.card.link : '#'} 
-          alt={props.card ? props.card.name : ''}
+          src={card ? card.url : '#'} 
+          alt={card ? card.name : ''}
         />
         <figcaption 
           className="popup__caption">
-          {props.card ? props.card.name : ''}
+          {card ? card.name : ''}
         </figcaption>
       </figure>
     </div>

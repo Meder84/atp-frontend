@@ -3,26 +3,34 @@ import React, { useState } from "react";
 // import { cards } from "../../utils/consts";
 // import { CurrentUserContext } from "../contexts/CurrentUserContext";
 // const cards = 'https://api.nomoreparties.co/beatfilm-movies';
-const cards = [
-  {
-    id: 1,
-    title: 'Автобусы',
-    url: '../../images/garage/bmw.jpg'
-  }
-]
+// import garageImages from '../../images/arrImages/arrImages.js/garageImages'
+import { garageImages } from "../../images/arrImages/arrImages.js";
+import LinkToMain from "../LinkToMain/LinkToMain.js";
+import Card from "../Card/Card.js";
 
-function Card() {
+function Cards({ onEditAvatar, onEditProfile, onAddPlace,
+  onCardClick, cards, onCardLike, onCardDelete }) {
   return (
-    <section>
-      <ul>
-        {
-          cards.map(car => (
-            <li key={car.id}>
-              <img src={require(`${car.url}.jpg`)} alt={car.title} />
-            </li>
-          ))
-        }
-      </ul>
+    
+    <section className="gallery">
+      <main className='gallery__wrapper wrapper'>
+        <div className="container-link">
+          <LinkToMain text="Галерея" />
+        </div>
+        <h2 className="gallery__title general-title title">Галерея</h2>
+        <h4 className="gallery__subtitle subtitle">В нашем арсенале имеется большое количество различных машин: < br /> от легковых до грузовых</h4>
+        <ul className="gallery__list">
+          {
+            garageImages.map((card) => (
+              <Card
+                key={card.id}
+                card={card}
+                onCardClick={onCardClick}
+              />
+            ))
+          }
+        </ul>
+      </main>
     </section>
   )
 }
@@ -30,4 +38,4 @@ function Card() {
 
 
 
-export default Card;
+export default Cards;

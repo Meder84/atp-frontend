@@ -1,24 +1,10 @@
 import React from "react";
-import ItemGallery from "../ItemGallery/ItemGallery";
+import { subbotnikImages } from "../../images/arrImages/arrImages";
 import LinkToMain from "../LinkToMain/LinkToMain";
-import imag1 from '../../images/subbotnikAtp/1.jpg'
-import imag2 from '../../images/subbotnikAtp/2.jpg'
-import imag3 from '../../images/subbotnikAtp/3.jpg'
-import imag4 from '../../images/subbotnikAtp/4.jpg'
-import imag5 from '../../images/subbotnikAtp/5.jpg'
-import imag6 from '../../images/subbotnikAtp/6.jpg'
-import imag7 from '../../images/subbotnikAtp/7.jpg'
-import imag8 from '../../images/subbotnikAtp/8.jpg'
-import imag9 from '../../images/subbotnikAtp/9.jpg'
-import imag10 from '../../images/subbotnikAtp/10.jpg'
-import imag11 from '../../images/subbotnikAtp/11.jpg'
-import imag12 from '../../images/subbotnikAtp/12.jpg'
-import imag13 from '../../images/subbotnikAtp/13.jpg'
-import imag14 from '../../images/subbotnikAtp/14.jpg'
+import Card from "../Card/Card";
 import './News.css'
 
-function News() {
-
+function News({ onCardClick }) {
   return (
     <section className="news">
       <main className="news__wrapper wrapper">
@@ -36,62 +22,16 @@ function News() {
             Были убраны и приведены в порядок прилегающие территории и выделенные участки улиц и тротуаров.
             Наряду с этим было произведена уборка мусора.</p>
           <ul className="news__list">
-            <ItemGallery
-              image={imag11}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag12}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag1}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag2}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag3}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag4}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag5}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag6}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag7}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag8}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag9}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag10}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag13}
-              alt='субботник'
-            />
-            <ItemGallery
-              image={imag14}
-              alt='субботник'
-            />
+          {
+            subbotnikImages.map((card) => (
+              <Card 
+                key = {card.id}
+                card = {card}
+                onCardClick = {onCardClick}
+              >
+              </Card>
+            ))
+          }
           </ul>
         </div>
       </main>

@@ -29,7 +29,7 @@ import "./Main.css";
 import Events from "../Events/Events";
 import CompletedWork from "../СompletedWork/СompletedWork";
 
-function Main() {
+function Main({onCardClick}) {
   const history = useHistory();
   const [loggedIn, setLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState({ name: '', email: '' });
@@ -201,7 +201,9 @@ function Main() {
       </Route>
       <Route path="/gallery">
         <Header headerCustom="app__header" />
-        <Gallery />
+        <Gallery 
+          onCardClick={onCardClick}
+        />
         <Footer />
         <FooterCopyright />
       </Route>
@@ -226,7 +228,9 @@ function Main() {
       </Route>
       <Route path='/news'>
         <Header headerCustom="app__header" />
-        <News />
+        <News 
+          onCardClick={onCardClick}
+        />
         <Footer />
         <FooterCopyright />
       </Route>

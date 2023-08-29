@@ -27,6 +27,10 @@
   overflow: hidden;
 }
 
+.gallery__list h3 {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .gallery__list {
     grid-template-columns: repeat(2, 1fr);
