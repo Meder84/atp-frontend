@@ -32,7 +32,7 @@
   width: 32px;
   height: 32px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: #fff;
   background-image: url(../../images/icons/iconClosePopup.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,6 +42,7 @@
   position: absolute;
   top: -40px;
   right: -40px;
+  border-radius: 5px;
 }
 
 .popup__image {
@@ -51,6 +52,7 @@
   object-fit: cover;
   object-position: center;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .popup__caption {
