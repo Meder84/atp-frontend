@@ -1,8 +1,15 @@
 {
   "files": {
-    "main.css": "/atp-frontend/static/css/main.1b1ac4c6.css",
-    "main.js": "/atp-frontend/static/js/main.19c348a4.js",
+    "main.css": "/atp-frontend/static/css/main.ca803c68.css",
+    "main.js": "/atp-frontend/static/js/main.03fb0724.js",
+    "static/media/6.jpg": "/atp-frontend/static/media/6.3bc99956b071aed008e4.jpg",
+    "static/media/7.jpg": "/atp-frontend/static/media/7.a468cd34d6417c7ccc62.jpg",
+    "static/media/3.jpg": "/atp-frontend/static/media/3.fd50c67c0260788dc6b5.jpg",
+    "static/media/2.jpg": "/atp-frontend/static/media/2.9a3235e827283d8f8091.jpg",
     "static/media/testimonials-5.jpg": "/atp-frontend/static/media/testimonials-5.0858a770d00d42b5f742.jpg",
+    "static/media/5.jpg": "/atp-frontend/static/media/5.5c17671a77a9415550bb.jpg",
+    "static/media/1.jpg": "/atp-frontend/static/media/1.c56ee12cfc74ae52070f.jpg",
+    "static/media/4.jpg": "/atp-frontend/static/media/4.8095bcc02f8bc41f2e91.jpg",
     "static/media/testimonials-4.jpg": "/atp-frontend/static/media/testimonials-4.beed1d501bb1057af46b.jpg",
     "static/media/presentation.pdf": "/atp-frontend/static/media/presentation.893542183bf9cd014ac0.pdf",
     "static/media/testimonials-1.png": "/atp-frontend/static/media/testimonials-1.bde192ae78351afd5916.png",
@@ -10,24 +17,17 @@
     "static/media/rent.pdf": "/atp-frontend/static/media/rent.e2b9a7a011e49ce536b9.pdf",
     "static/media/testimonials-6.jpg": "/atp-frontend/static/media/testimonials-6.ae39cd40653c7ad79a9d.jpg",
     "static/media/11.jpg": "/atp-frontend/static/media/11.58bb3c52acee96004e2d.jpg",
-    "static/media/3.jpg": "/atp-frontend/static/media/3.fd50c67c0260788dc6b5.jpg",
-    "static/media/4.jpg": "/atp-frontend/static/media/4.8095bcc02f8bc41f2e91.jpg",
-    "static/media/2.jpg": "/atp-frontend/static/media/2.9a3235e827283d8f8091.jpg",
     "static/media/logo.png": "/atp-frontend/static/media/logo.d769bd7a8b6e9f4fa21e.png",
     "static/media/Entrance.png": "/atp-frontend/static/media/Entrance.e30140875165bf90610e.png",
     "static/media/other.png": "/atp-frontend/static/media/other.e1de97f13fa69604278b.png",
     "static/media/8.jpg": "/atp-frontend/static/media/8.2a6172de9aa8b4534ed0.jpg",
     "static/media/testimonials-3.png": "/atp-frontend/static/media/testimonials-3.ce4adaffb010cc87705e.png",
-    "static/media/6.jpg": "/atp-frontend/static/media/6.3bc99956b071aed008e4.jpg",
     "static/media/10.jpg": "/atp-frontend/static/media/10.67b45639d91e216cfa4a.jpg",
-    "static/media/7.jpg": "/atp-frontend/static/media/7.a468cd34d6417c7ccc62.jpg",
     "static/media/9.jpg": "/atp-frontend/static/media/9.ba37d173d960d292ef3a.jpg",
     "static/media/garage.jpg": "/atp-frontend/static/media/garage.5677dae7da4519d974eb.jpg",
-    "static/media/1.jpg": "/atp-frontend/static/media/1.c56ee12cfc74ae52070f.jpg",
     "static/media/backTheBuses.jpg": "/atp-frontend/static/media/backTheBuses.315f97dd2c20eff6f451.jpg",
     "static/media/focus.jpg": "/atp-frontend/static/media/focus.4cb46097228e152f3ece.jpg",
     "static/media/bus.jpg": "/atp-frontend/static/media/bus.b7ada6e2efd4ed104fed.jpg",
-    "static/media/5.jpg": "/atp-frontend/static/media/5.5c17671a77a9415550bb.jpg",
     "static/media/parking.png": "/atp-frontend/static/media/parking.06f3d004926755bd12f1.png",
     "static/media/11-2.jpg": "/atp-frontend/static/media/11-2.ac86b3a85a53f1d77409.jpg",
     "static/media/miniBuses1.jpg": "/atp-frontend/static/media/miniBuses1.683a8be91fe090dcbb6d.jpg",
@@ -82,11 +82,11 @@
     "static/media/iconFacebook.svg": "/atp-frontend/static/media/iconFacebook.5e1cb4b86ac3f872dadc.svg",
     "static/media/iconHamburger.svg": "/atp-frontend/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
     "static/media/iconClosePopup.svg": "/atp-frontend/static/media/iconClosePopup.09da049275af48ed6340.svg",
-    "main.1b1ac4c6.css.map": "/atp-frontend/static/css/main.1b1ac4c6.css.map",
-    "main.19c348a4.js.map": "/atp-frontend/static/js/main.19c348a4.js.map"
+    "main.ca803c68.css.map": "/atp-frontend/static/css/main.ca803c68.css.map",
+    "main.03fb0724.js.map": "/atp-frontend/static/js/main.03fb0724.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b1ac4c6.css",
-    "static/js/main.19c348a4.js"
+    "static/css/main.ca803c68.css",
+    "static/js/main.03fb0724.js"
   ]
 }
