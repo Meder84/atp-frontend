@@ -28,6 +28,7 @@ import { BAD_REQUEST, DEFAULT_ERROR } from '../../utils/consts';
 import "./Main.css";
 import Events from "../Events/Events";
 import CompletedWork from "../СompletedWork/СompletedWork";
+import Rewarding from "../Rewarding/Rewarding";
 
 function Main({onCardClick}) {
   const history = useHistory();
@@ -229,6 +230,14 @@ function Main({onCardClick}) {
       <Route path='/news'>
         <Header headerCustom="app__header" />
         <News 
+          onCardClick={onCardClick}
+      />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/rewarding'>
+        <Header headerCustom="app__header" />
+        <Rewarding 
           onCardClick={onCardClick}
         />
         <Footer />

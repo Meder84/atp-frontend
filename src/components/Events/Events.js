@@ -4,6 +4,7 @@ import CustomLink from "../CustomLink/CustomLink";
 import ItemGallery from "../ItemGallery/ItemGallery";
 import imagSubbotnik from '../../images/presentation/11-2.jpg';
 import entrance from '../../images/presentation/Entrance.png';
+import image7 from '../../images/rewarding/7.jpg';
 import other from '../../images/presentation/other.png';
 import parking from '../../images/presentation/parking.png';
 import './Events.css';
@@ -23,12 +24,15 @@ function Events() {
 					<ul className="events__list">
 						<li className="events__item">
 							<CustomLink
-								to="/completedWork"
+								to="/rewarding"
 								customNavigationLink="events__item-link"
 							>
-								<p className="text">Выполненные работы за последий год.</p>
+								<p className="text">Государственное учреждение "Автотранспортное предприятие" 
+								  при Управлении делами Президента Кыргызской Республики,
+									поздравило своих сотрудников с Днем независимости Кыргызстана.
+								</p>
 								<ItemGallery
-									image={entrance}
+									image={image7}
 									customItemGallery="events__image"
 								/>
 							</CustomLink>
@@ -42,6 +46,18 @@ function Events() {
 									при Управлении делами Президента Кыргызской Республики на общереспубликанском субботнике</p>
 								<ItemGallery
 									image={imagSubbotnik}
+									customItemGallery="events__image"
+								/>
+							</CustomLink>
+						</li>
+						<li className="events__item">
+							<CustomLink
+								to="/completedWork"
+								customNavigationLink="events__item-link"
+							>
+								<p className="text">Выполненные работы за последий год.</p>
+								<ItemGallery
+									image={entrance}
 									customItemGallery="events__image"
 								/>
 							</CustomLink>

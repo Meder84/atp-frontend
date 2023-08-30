@@ -47,6 +47,13 @@ import subbotnik12 from '../subbotnikAtp/12.jpg'
 import subbotnik13 from '../subbotnikAtp/13.jpg'
 import subbotnik14 from '../subbotnikAtp/14.jpg'
 
+import imageRewarding1 from '../rewarding/1.jpg'
+import imageRewarding2 from '../rewarding/2.jpg'
+import imageRewarding3 from '../rewarding/3.jpg'
+import imageRewarding4 from '../rewarding/4.jpg'
+import imageRewarding5 from '../rewarding/5.jpg'
+import imageRewarding6 from '../rewarding/6.jpg'
+import imageRewarding7 from '../rewarding/7.jpg'
 
 export const garageImages = [
   { id: 1, name: 'Автобус', url: backTheBuses },
@@ -103,4 +110,14 @@ export const subbotnikImages = [
   { id: 12, name: 'test3', url: subbotnik12 },
   { id: 13, name: 'test1', url: subbotnik13 },
   { id: 14, name: 'test2', url: subbotnik14 },
+]
+
+export const rewarding = [
+  { id: 1, name: 'test1', url: imageRewarding1 },
+  { id: 2, name: 'test2', url: imageRewarding2 },
+  { id: 3, name: 'test3', url: imageRewarding3 },
+  { id: 4, name: 'test1', url: imageRewarding4 },
+  { id: 5, name: 'test1', url: imageRewarding5 },
+  { id: 6, name: 'test2', url: imageRewarding6 },
+  { id: 7, name: 'test2', url: imageRewarding7 },
 ]
