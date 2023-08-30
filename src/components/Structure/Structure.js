@@ -14,7 +14,7 @@ function Structure() {
 					<li className="structure__item">
 						<img className="structure__image" src={flag} alt="руководителя" />
 						<div className="structure__description">
-							<h3 className="structure__description__title"> Тургунбаева Эльмира Болотбековна</h3>
+							<h3 className="structure__description__title"> Шаменова Чолпон Аскарбековна</h3>
 							<p className="structure__description__text text">Главный бухгалтер Государственного учреждения
 								"Автотранспортное предприятие" при Управлении делами Президента Кыргызской Республики</p>
 							<p className="structure__description__text text">+996 312 436 060</p>
