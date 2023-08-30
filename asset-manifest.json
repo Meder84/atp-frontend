@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atp-frontend/static/css/main.ca803c68.css",
-    "main.js": "/atp-frontend/static/js/main.03fb0724.js",
+    "main.js": "/atp-frontend/static/js/main.b61f5d10.js",
     "static/media/6.jpg": "/atp-frontend/static/media/6.3bc99956b071aed008e4.jpg",
     "static/media/7.jpg": "/atp-frontend/static/media/7.a468cd34d6417c7ccc62.jpg",
     "static/media/3.jpg": "/atp-frontend/static/media/3.fd50c67c0260788dc6b5.jpg",
@@ -83,10 +83,10 @@
     "static/media/iconHamburger.svg": "/atp-frontend/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
     "static/media/iconClosePopup.svg": "/atp-frontend/static/media/iconClosePopup.09da049275af48ed6340.svg",
     "main.ca803c68.css.map": "/atp-frontend/static/css/main.ca803c68.css.map",
-    "main.03fb0724.js.map": "/atp-frontend/static/js/main.03fb0724.js.map"
+    "main.b61f5d10.js.map": "/atp-frontend/static/js/main.b61f5d10.js.map"
   },
   "entrypoints": [
     "static/css/main.ca803c68.css",
-    "static/js/main.03fb0724.js"
+    "static/js/main.b61f5d10.js"
   ]
 }
